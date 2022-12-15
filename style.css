@@ -8,14 +8,15 @@
 	text-decoration: none;
 }
 body {
-	background: whitesmoke;
+	background: #FFFFFF;
 }
 header {
 	font-weight: bold;
 	font-size: 25px;
+	font-family: 'Poppins', sans-serif;
 }
 article {
-	background: lightsteelblue;
+	background: #b0c4de;
 	padding: 12px;
 }
 /* navbar section */
@@ -29,7 +30,7 @@ article {
 	height: 100%;
 	padding: 30px 0;
 	display: block;
-	background: lightblue;
+	background: #ADD8E6;
 	width: 300px;
 	line-height: 26px;
 	border-top-right-radius: 5px;
@@ -43,17 +44,18 @@ article {
 }
 #navbar .sidebar ul li {
 	padding: 15px;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #808080;
 }
 #navbar .sidebar ul li a {
 	display: block;
-	color: black;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
 }
 #navbar .sidebar ul li:hover {
-	background: darkcyan;
+	background: #82c4d9;
 }
 #navbar .sidebar ul li:hover a {
-	color: white;
+	color: #000000;
 }
 /* main content section */
 #main-doc .main-section {
@@ -72,47 +74,12 @@ article {
 	margin-left: 40px;
 	font-size: 17px;
 }
-#main-doc .main-section .sources {
-	color: black;
-}
 #main-doc .main-section .sources:hover {
-	color: blue;
 	text-decoration: underline;
 }
 #main-doc .main-section article {
 	border-radius: 5px;
 }
-/* media queries */
-/* 580 */
-@media screen and (max-width: 580px) {
-	#navbar .sidebar ul li a {
-		font-size: 14px;
-	}
-	article {
-		padding: 10px;
-	}
-}
-/* 768 */
-@media screen and (max-width: 768px) {
-	#navbar .sidebar {
-		position: fixed;
-		width: 100px;
-		height: 100%;
-		padding: 30px 0;
-		display: block;
-		background: lightblue;
-		width: 230px;
-		line-height: 26px;
-		border-top-right-radius: 5px;
-	}
-	#main-doc .main-section {
-		margin-left: 239px;
-	}
-	#navbar .sidebar img {
-		margin-left: 55px;
-	}
-}
-/* 992 */
 @media screen and (max-width: 992px) {
 	header {
 		font-size: 23px;
@@ -123,4 +90,25 @@ article {
 	#main-doc .main-section ul li {
 		font-size: 15px;
 	} 
+}
+@media screen and (max-width: 768px) {
+	#navbar .sidebar {
+		width: 100px;
+		height: 100%;
+		width: 230px;
+	}
+	#main-doc .main-section {
+		margin-left: 239px;
+	}
+	#navbar .sidebar img {
+		margin-left: 55px;
+	}
+}
+@media screen and (max-width: 600px) {
+	#navbar .sidebar ul li a {
+		font-size: 14px;
+	}
+	article {
+		padding: 10px;
+	}
 }
